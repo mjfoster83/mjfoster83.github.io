@@ -1,0 +1,23 @@
+body {
+  background: #231f20;
+  background: -moz-radial-gradient(center, circle cover, #555a5f 0%, #231f20 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #555a5f), color-stop(100%, #231f20));
+  background: -webkit-radial-gradient(center, circle cover, #555a5f 0%, #231f20 100%);
+  background: -o-radial-gradient(center, circle cover, #555a5f 0%, #231f20 100%);
+  background: -ms-radial-gradient(center, circle cover, #555a5f 0%, #231f20 100%);
+  background: radial-gradient(center, circle cover, #555a5f 0%, #231f20 100%);
+  background-color: #231f20; }
+
+.reveal a {
+  color: #B6B2A7;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease; }
+
+.reveal section img {
+  margin: 15px 0px;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
