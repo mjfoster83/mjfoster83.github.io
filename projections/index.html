@@ -63,6 +63,13 @@
 				</section>
 
 				<section>
+					<h2>Follow Along</h2>
+					<p>
+						<a href="http://mjfoster83.github.io/projections">http://mjfoster83.github.io/projections</a>
+					</p>
+				</section>
+
+				<section>
 					<h2>Map Projections Matter</h2>
 					<p>
 						Don't they?
@@ -89,15 +96,15 @@
 
 
 				<section>
-					<p>Where were The Proclaimers walking to?<br>
+					<p>To where were The Proclaimers walking?<br>
 						<img src="lib/img/hazel-proclaimers.png"><br>
 						<em><small>Hazel McKendrick</small></em>
 					</p>
 				</section>
 
 				<section>
-					<p>Where were The Proclaimers <em>actually</em> walking to?<br>
-						<img src="lib/img/proclaimers.png" height="405px"><br>
+					<p>Where The Proclaimers were <em>actually</em> walking.<br>
+						<img src="lib/img/proclaimers-actual.jpg" height="500px"><br>
 						<em><small><a href="https://twitter.com/kennethfield">Kenneth Field</a></small></em>
 					</p>
 				</section>
@@ -183,7 +190,7 @@
 
 				<section>
 					<h2>Ellipsoid</h2>
-					<p>There are many ellipsoids. Local ellipsoids minimize differences between the geoid and ellipsoid on a local or regional.
+					<p>There are many ellipsoids. Local ellipsoids minimize differences between the geoid and ellipsoid on a local or regional scale.
 					</p>
 				</section>
 
@@ -282,12 +289,12 @@
 
 				<section>
 					<h2>NAD 1927 and NAD 1983</h2>
-					<p>A point having a given latitude and longitude in NAD 1927 might be displaced on the order of tens of meters from another point having identical latitude and longitude in NAD 1983. It is important to specify.
+					<p>A point having a given latitude and longitude in NAD 1927 might be displaced on the order of tens of meters from another point having identical latitude and longitude in<br>NAD 1983. It is important to specify.
 					</p>
 				</section>
 
 				<section>
-					<h2>Bellingham, Washington</h2>
+					<h2>Case: Bellingham, Washington</h2>
 					<table>
 						<thead>
 							<tr>
@@ -613,6 +620,15 @@
 				</section>
 
 				<section>
+					<h2>Project it Yourself!</h2>
+					<p>Tom Macwright</p>
+					<p><a href="http://www.macwright.org/projectityourself/">Click to visit</a><br>Enter the following to get a Mercator.<br></p>
+					<pre><code data-trim contenteditable>function project(x, y) {
+    return [x, ( 180/Math.PI) * ( 2 * Math.atan(Math.exp(y * Math.PI/180)) - Math.PI/2 )];
+}</code></pre>
+				</section>
+
+				<section>
 					<h2>Kartograph.org</h2>
 					<p>Gregor Aisch - Kartograph.js</p>
 					<p><a href="http://kartograph.org/showcase/projections">Click to visit</a></p>
@@ -625,6 +641,7 @@
 
 				<section data-background="lib/img/rat-projections-dark.png">
 					<h2>That is all... Thank you!</h2>
+					<p><a href="mailto:mjfoster@mit.edu?Subject=Maptime" target="_top">mjfoster@mit.edu</a> | <a href="http://twitter.com/mjfoster83">@mjfoster83</a></p>
 				</section>
 
 			</div>
