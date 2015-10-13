@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>NACIS 2015 | Crowdsourced Data Collection</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+		<link rel="stylesheet" href="lib/css/custom.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="lib/img/mercator-projection.jpg">
+					<h1>Crowdsourcing</h1>
+					<h2>A Leaflet and CartoDB-based Stack</h2>
+					<hr>
+					<h3>DUSPviz - Skills and Tools for Planners</h3>
+					<p>
+						<small><a href="http://twitter.com/mjfoster83">Mike Foster</a> | <a href="http://dusp.mit.edu">MIT Urban Studies and Planning</a></small>
+					</p>
+				</section>
+
+				<section data-background="lib/img/boston-back-bay.jpg">
+					<h2>Hi! I'm Mike. I make maps.</h2>
+					<p>
+						I am a biker, sailor, and skier... and also<br>a geographer, cartographer, web guy, and educator.
+					</p>
+
+				</section>
+
+				<section>
+					<img src="lib/img/affiliations.png" alt="affiliations" style="box-shadow: none; border: none; background: none;"><br><em>GIS/Data Visualization Specialist</em><br>MIT Department of Urban Studies and Planning<br><br>
+					<a href="mailto:mjfoster@mit.edu?Subject=Maptime" target="_top">mjfoster@mit.edu</a> | <a href="http://twitter.com/mjfoster83">@mjfoster83</a>
+				</section>
+
+				<section data-background-video="http://www.digitalmatatus.com/video/MatatusVideoHH.mp4" 
+              data-background-color="#000">
+            		<h3>MIT Civic Data Design Lab</h3>
+              		<a href="http://www.civicdatadesignlab.org/" target="_blank">www.civicdatadesignlab.org</a>
+				</section>
+
+				<section>
+					<h2>Follow Along</h2>
+					<p>
+						<a href="http://mjfoster83.github.io/nacis-2015">http://mjfoster83.github.io/nacis-2015</a>
+					</p>
+				</section>
+
+				<section data-background="lib/img/geodesist.jpg">
+					<h1>Crowdsourcing Data</h1>
+					<h2>Using a Leaflet-CartoDB Stack</h2>
+				</section>
+
+				<section>
+					<h2>How do you teach geography and design to non-geographers?</h2>
+				</section>
+
+				<section>
+					<h3>Concepts and fundamentals manifest themselves through tools.</h3>
+				</section>
+
+				<section>
+					<img src="lib/img/mike-navbar-logo.png" alt="affiliations" style="box-shadow: none; border: none; background: none;">
+					<p><a href="http://duspviz.mit.edu" title="Workshop Materials" target="_blank">http://duspviz.mit.edu</a></p>
+				</section>
+
+				<section>
+					<img src="lib/img/mike-navbar-logo.png" alt="affiliations" style="box-shadow: none; border: none; background: none;">
+					<p>Skills and tools for better planning.<br>
+						Goal improve departmental capacity in data analysis, visual representation, and technological communication tools.</p>
+				</section>
+
+				<section>
+					<img src="lib/img/duspviz-homepage.png" alt="affiliations" style="box-shadow: none; border: none; background: none;">
+				</section>
+
+				<section>
+					<img src="lib/img/webMapWorkshop-logo-01.png" alt="affiliations" style="box-shadow: none; border: none; background: none;">
+					<p>Spring 2015<br>
+					<a href="http://duspviz.mit.edu/web-map-workshop" title="Workshop Materials" target="_blank">http://duspviz.mit.edu/web-map-workshop</a></p>
+					<p>GOAL: Introduce webmapping and coding to planners in a relevant and concise way.</p>
+				</section>
+
+				<section data-background="lib/img/duspviz-homepage-dark.png">
+					<h2>#webmapworkshop</h2>
+					<ol>
+						<li>HTML/CSS</li>
+						<li>Bootstrap</li>
+						<li>Basic Web Map</li>
+						<li>JavaScript</li>
+						<li>Styling</li>
+						<li>PostGIS/CartoDB</li>
+						<li>Data Collection</li>
+					</ol>
+				</section>
+
+				<section>
+					<img src="lib/img/webMapWorkshop-logo-01.png" alt="affiliations" style="box-shadow: none; border: none; background: none;">
+					<h2>Week 7: Data Collection</h2>
+				</section>
+
+				<section data-background="lib/img/geodesist.jpg">
+					<h2>Create a Data Collection App</h2>
+					<a href="http://duspviz.mit.edu/web-map-workshop">duspviz.mit.edu/web-map-workshop/cartodb-data-collection</a></p>
+				</section>
+
+				<section>
+					<h2>Project Concept</h2>
+					<p>A lightweight web map application in which visitors can input information.</p>
+				</section>
+
+				<section>
+					<img src="lib/img/caffeinated-cambridge.png" alt="affiliations" style="box-shadow: none; border: none; background: none">
+				</section>
+
+				<section>
+					<h2>What you use:</h2>
+					<ul>
+						<li>LeafletJS</li>
+						<li>Leaflet.draw</li>
+						<li>CartoDB</li>
+						<li>jQuery/jQueryUI</li>
+						<li>PHP</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What you need:</h2>
+					<ul>
+						<li>A CartoDB Account</li>
+						<li>PHP-enabled Webhosting</li>
+						<li>Text Editor (Sublime Text)</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="lib/img/postgres.png" alt="affiliations" style="box-shadow: none; border: none; background: none; width: 200px">
+					<h2>Task 1: Backend</h2>
+					<p>We need a place to keep our data.<br>This database has to be spatially enabled.</p>
+					<p>PostgreSQL and PostGIS would do the trick.</p>
+				</section>
+
+				<section>
+					<img src="lib/img/cartodb_logo_white.png" alt="affiliations" style="box-shadow: none; border: none; background: none; width: 400px">
+					<p>Provides a configured, cloud-based instance of PostGIS</p>
+					<p>Con: storage limited. Pro: storage still often sufficient.</p>
+				</section>
+
+				<section>
+					<img src="lib/img/cartodb_logo_white.png" alt="affiliations" style="box-shadow: none; border: none; background: none; width: 400px">
+					<a href="http://docs.cartodb.com/cartodb-platform/sql-api.html"><h2 style="margin-top: -66px;">SQL API</h2></a>
+					<p>Allows us to hit our CartoDB datasets with SQL Queries, returns JSON object.</p>
+					<p>Accepts SELECT, INSERT, UPDATE, and DELETE Statements</p>
+					<a href="http://docs.cartodb.com/cartodb-platform/sql-api.html">View Documentation</a>
+				</section>
+
+				<section>
+					<h2>Coffee Near Me</h2>
+					<pre><code data-trim>SELECT * FROM coffee_cafes
+ORDER BY the_geom <-> ST_SetSRID(ST_MakePoint({lng},{lat}), 4326) LIMIT 5</code></pre>
+				</section>
+
+				<section>
+					<h2>API Key, Username, and Table Required</h2>
+					<p>Security Matters</p>
+				</section>
+
+				<section>
+					<img src="lib/img/php.png" alt="affiliations" style="box-shadow: none; border: none; background: none; width: 200px">
+					<h2>Task 1: Backend (cont.)</h2>
+					<p>We need something server-side to hold our credentialed information to allow for write access.</p>
+					<p>We have some options... NodeJS? PHP?</p>
+				</section>
+
+				<section>
+					<img src="lib/img/front-end.png" alt="affiliations" style="box-shadow: none; border: none; background: none; width: 200px">
+					<h2>Task 2: Frontend</h2>
+					<p>Easy to use, intuitive interface.</p>
+					<p>LeafletJS</p>
+				</section>
+
+				<section>
+					<img src="lib/img/front-end.png" alt="affiliations" style="box-shadow: none; border: none; background: none; width: 200px">
+					<h2>Task 2: Frontend (cont.)</h2>
+					<p>Build a nice modal to collect information.</p>
+					<p>JavaScript/jQuery</p>
+				</section>
+
+				<section>
+					<h1>Our Process</h1>
+				</section>
+
+				<section>
+					<h2>1. Create an Empty Dataset in CartoDB</h2>
+					<img src="lib/img/data-collector-create.png" alt="affiliations" style="box-shadow: none; border: none; background: none">
+				</section>
+
+				<section>
+					<p>Data Collector<br>Throw in a couple test points in CartoDB.</p>
+					<img src="lib/img/data-collector.png" alt="affiliations" style="box-shadow: none; border: none; background: none">
+				</section>
+
+				<section>
+					<h2>2. Set up our HTML document, stylesheets, link relations, and map</h2>
+					<p>Set up the page.</p>
+					<p>This application is contained all within a single html doc.</p>
+				</section>
+
+				<section>
+					<p>Set up the document and map</p>
+<pre><code data-trim>// Create Leaflet map object
+var map = L.map('map',{ center: [42.381899, -71.122499], zoom: 13});
+
+// Add Tile Layer basemap
+L.tileLayer('http://a{s}.acetate.geoiq.com/tiles/acetate-hillshading/{z}/{x}/{y}.png', {
+  attribution: '&copy;2012 Esri & Stamen, Data from OSM and Natural Earth',
+  subdomains: '0123',
+  minZoom: 2,
+  maxZoom: 18
+}).addTo(map);</code></pre>
+				</section>
+
+				<section>
+					<h2>Add the new data collection table to Leaflet</h2>
+					<p>Use the SQL API to call a JSON object into your map.</p>
+				</section>
+
+<section>
+	<p>CartoDB SQL API in action</p>
+<pre><code data-trim>// Get CartoDB selection as GeoJSON and Add to Map
+function getGeoJSON(){
+  $.getJSON("https://"+cartoDBUsername+".cartodb.com/api/v2/sql?format=GeoJSON&q="+sqlQuery, function(data) {
+    cartoDBPoints = L.geoJson(data,{
+      pointToLayer: function(feature,latlng){
+        var marker = L.marker(latlng);
+        marker.bindPopup('<p>' + feature.properties.description + '<br /><em>Submitted by </em>' + feature.properties.name + '</p>');
+        return marker;
+      }
+    }).addTo(map);
+  });
+};</code></pre>
+</section>
+
+				<section>
+					<h2>3. Implement the Leaflet.draw plugin to Draw Data</h2>
+					<p>Leaflet Draw is one of many crazy awesome plugin.</p>
+					<p><a href="https://github.com/Leaflet/Leaflet.draw" target="_blank">Leaflet.draw Documentation</a></p>
+				</section>
+
+				<section>
+					<img src="lib/img/caffeinated-cambridge.png" alt="affiliations" style="box-shadow: none; border: none; background: none">
+				</section>
+				
+				<section>
+					<h2>4. Use a Proxy to Send Collected Data to CartoDB</h2>
+					<p>Lorem ipsum.</p>
+				</section>
+
+				<section>
+					<h2>5. View Data on the Map</h2>
+					<p>Our basic structure and workflow is almost done.</p>
+				</section>
+
+				<section>
+					<img src="lib/img/caffeinated-cambridge.png" alt="affiliations" style="box-shadow: none; border: none; background: none">
+				</section>
+
+				<section>
+					<h2>Security</h2>
+					<p>Protect yourself from deviants.</p>
+				</section>
+
+				<section>
+					<h2>Next Steps</h2>
+					<p>Collect lines and polygons.<br>
+						Add user registration and login.<br>
+						Edit points and update your dataset.<br>
+						Expand to Mobile.</p>
+				</section>
+
+				<section>
+					<h1>#webmapworkshop</h1>
+					<h2>Upcoming Revisions</h2>
+					<p>Migrate to Leaflet 1.0<br>
+						Use CartoDB.js Library<br>
+						Explore other Data Collection Alternatives<br>
+						Expand Data Storage Options</p>
+				</section>
+
+				<section data-background="lib/img/mapping-mpls.png">
+				</section>
+
+				<section data-background="lib/img/mapping-mpls-dark.png">
+					<h2>Crowdsourcing Minneapolis Neighborhoods</h2>
+					<p><a href="http://maps.graphicarto.com/twincityhoods" target="_top">http://maps.graphicarto.com/twincityhoods</a></p>
+				</section>
+
+				<section data-background="lib/img/mapping-mpls-dark.png">
+					<h2>Thank you!</h2>
+					<p><a href="mailto:mjfoster@mit.edu?Subject=NACIS2015" target="_top">mjfoster@mit.edu</a> | <a href="http://twitter.com/mjfoster83">@mjfoster83</a></p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
