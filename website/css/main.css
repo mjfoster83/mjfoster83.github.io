@@ -1,0 +1,29 @@
+body {
+	text-align: center;
+}
+
+p {
+    font-size: 12;
+}
+
+html {
+  font-family: Georgia, Times, serif;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+p {
+  background-color: #dddddd;
+    padding: 20px;
+    width: 320px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+a {
+  color: orange;
+}
+
+a:hover {
+	color: red;
+}
