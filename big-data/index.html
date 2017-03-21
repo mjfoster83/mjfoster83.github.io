@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <title>Hello World</title>
+        <link href="css/main.css" rel="stylesheet" />
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <!-- This is a comment -->
+        <h1>Hello World</h1>
+        <div id="main">
+            <button type="button" onclick="helloworld()">Click Me!</button>
+            <h1 id="headtext">This is Mikes page</h1>
+            <p class="my_paragraphs" id="foo">This is my first paragraph.</p>
+            <p class="my_paragraphs" id="bar">This is my second paragraph. <a href="http://dusp.mit.edu">Take me to DUSP.</a></p>
+            <a href="http://dusp.mit.edu">Take me to DUSP.</a>
+            <img src="images/cat.jpg"/>
+        </div>
+        <script>
+        // listen for a click on 'foo'
+// when click occurs, run function called displayDate
+document.getElementById("foo").addEventListener("click", displayDate);
+
+// displayDate function
+function displayDate() {
+    document.getElementById("foo").innerHTML = Date();
+}</script>
+    </body>
+</html>
